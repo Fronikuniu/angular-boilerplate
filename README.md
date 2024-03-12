@@ -30,3 +30,9 @@ Inside `apps/api` copy `.env.example` file and paste as `.env` file, change fiel
 
 - NX extension: `frontend-e2e/e2e` command
 - console command: `npx nx run frontend-e2e:e2e`
+
+### Storybook run:
+
+- NX extension: `frontend/storybook` command
+- console command: `npx nx run frontend:storybook`
+- auto generate story files: `npx nx generate @nx/angular:stories --name=frontend --no-interactive`

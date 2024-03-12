@@ -1,5 +1,6 @@
-import { type Meta, type StoryObj } from '@storybook/angular';
+import { moduleMetadata, type Meta, type StoryObj } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
+import { ButtonModule } from 'primeng/button';
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
@@ -10,21 +11,21 @@ type Story = StoryObj<ButtonComponent>;
 
 export const Default: Story = {
   args: {
-    type: '',
+    type: 'primary',
   },
 };
-export const Red: Story = {
+export const Success: Story = {
   args: {
-    type: 'red',
+    type: 'success',
   },
 };
-export const Green: Story = {
+export const Warning: Story = {
   args: {
-    type: 'green',
+    type: 'warning',
   },
 };
-export const Blue: Story = {
+export const Danger: Story = {
   args: {
-    type: 'blue',
+    type: 'danger',
   },
 };
