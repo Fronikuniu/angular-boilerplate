@@ -8,6 +8,8 @@
 
 Inside `apps/api` copy `.env.example` file and paste as `.env` file, change fields based on your postgres database configuration.
 
+## Run with
+
 ### Angular run:
 
 - development:
