@@ -1,6 +1,5 @@
-import { moduleMetadata, type Meta, type StoryObj } from '@storybook/angular';
+import { type Meta, type StoryObj } from '@storybook/angular';
 import { ButtonComponent } from './button.component';
-import { ButtonModule } from 'primeng/button';
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
