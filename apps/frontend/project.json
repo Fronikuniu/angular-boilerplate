@@ -22,7 +22,8 @@
         "inlineStyleLanguage": "scss",
         "assets": [
           "apps/frontend/src/favicon.ico",
-          "apps/frontend/src/assets"
+          "apps/frontend/src/assets",
+          "apps/frontend/src/mockServiceWorker.js"
         ],
         "styles": [
           "apps/frontend/src/styles.scss",

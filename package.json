@@ -64,6 +64,7 @@
     "eslint": "~8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-playwright": "^0.15.3",
+    "msw": "^2.2.3",
     "nx": "18.0.8",
     "postcss": "^8.4.5",
     "prettier": "^2.6.2",
