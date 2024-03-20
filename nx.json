@@ -53,7 +53,9 @@
       "unitTestRunner": "none"
     },
     "@nx/angular:component": {
-      "style": "scss"
+      "style": "scss",
+      "changeDetection": "OnPush",
+      "skipTests": true
     }
   },
   "tasksRunnerOptions": {

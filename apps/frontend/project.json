@@ -2,7 +2,7 @@
   "name": "frontend",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "prefix": "app",
+  "prefix": "pzps",
   "sourceRoot": "apps/frontend/src",
   "tags": [],
   "targets": {
@@ -26,7 +26,7 @@
           "apps/frontend/src/mockServiceWorker.js"
         ],
         "styles": [
-          "apps/frontend/src/styles.scss",
+          "apps/frontend/src/styles/styles.scss",
           "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
           "node_modules/primeng/resources/primeng.min.css"
         ],

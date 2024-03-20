@@ -1,0 +1,14 @@
+<div class="languages">
+  @for (locale of data; track $index) {
+  <p
+    class="language"
+    [class.active]="activeLanguage() === locale.code"
+    [title]="locale.localName"
+    (click)="changeLanguage(locale.code)"
+  >
+    {{ locale.code }}
+  </p>
+  @if (!$last) {
+  <div>|</div>
+  } }
+</div>

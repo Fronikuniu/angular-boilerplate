@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
-  selector: 'app-button',
+  selector: 'pzps-button',
   standalone: true,
   imports: [ButtonModule],
   templateUrl: './button.component.html',

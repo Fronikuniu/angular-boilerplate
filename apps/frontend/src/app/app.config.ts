@@ -1,11 +1,16 @@
 import type { ApplicationConfig } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
-import { appRoutes } from './app.routes';
+import { appRoutes } from '../core/routes/app.routes';
 import {
   provideClientHydration,
   withHttpTransferCacheOptions,
 } from '@angular/platform-browser';
-import { provideHttpClient, withFetch } from '@angular/common/http';
+import {
+  provideHttpClient,
+  withFetch,
+  withInterceptors,
+} from '@angular/common/http';
+import { languageInterceptor } from '../core/interceptors/language.interceptor';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -21,6 +26,6 @@ export const appConfig: ApplicationConfig = {
         scrollPositionRestoration: 'enabled',
       })
     ),
-    provideHttpClient(withFetch()),
+    provideHttpClient(withFetch(), withInterceptors([languageInterceptor])),
   ],
 };

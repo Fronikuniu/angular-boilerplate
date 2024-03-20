@@ -1,0 +1,14 @@
+.languages {
+  @apply flex gap-[5px] text-[18px];
+}
+.language {
+  @apply cursor-pointer uppercase font-thin;
+
+  &:hover,
+  &.active {
+    @apply text-yellow-900 transition duration-300 ease-in-out;
+  }
+  &.active {
+    @apply font-black;
+  }
+}
