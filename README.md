@@ -8,7 +8,7 @@
 
 Inside `apps/api` copy `.env.example` file and paste as `.env` file, change fields based on your postgres database configuration.
 
-## Run with
+## Run with:
 
 ### Angular run:
 
@@ -38,3 +38,17 @@ Inside `apps/api` copy `.env.example` file and paste as `.env` file, change fiel
 - NX extension: `frontend/storybook` command
 - console command: `npx nx run frontend:storybook`
 - auto generate story files: `npx nx generate @nx/angular:stories --name=frontend --no-interactive`
+
+
+## Deploys:
+
+### Api:
+- `nx run api:build:production`
+- `cd dist/apps/api && npm i --legacy-peer-deps`
+- create `.env` file
+- `node index.js`
+
+### Frontend:
+- `nx run frontend:build:production`
+- `cd dist/apps/frontend/server`
+- `node server.mjs`
