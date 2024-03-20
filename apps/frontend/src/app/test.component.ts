@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http';
-import { Component, inject, signal } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { TestPageApiService } from '../api/test-page/test-page.service';
 
 // Do wyrzucenia potem
 
@@ -10,15 +10,10 @@ import { Component, inject, signal } from '@angular/core';
   template: `<p>{{ data()?.data }}</p>`,
 })
 export class TestComponent {
-  readonly #http = inject(HttpClient);
-  data = signal<any | undefined>(undefined);
+  readonly #http = inject(TestPageApiService);
+  data = this.#http.data;
 
   constructor() {
-    this.#http.get('http://127.0.0.1:1337/api/tests').subscribe((data) => {
-      this.data.set(data);
-      console.log(data);
-    });
+    this.#http.getTest();
   }
 }
-
-// DODAC KONFIGURACJE DEPLOY DO STRAPI (to co ostatnio zostało dodane) (index, app itp)
