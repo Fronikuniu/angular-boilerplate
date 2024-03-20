@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TestPageApiService } from '../api/test-page/test-page.service';
 
-// Do wyrzucenia potem
+// Do wyrzucenia potem - to tylko przykładowy komponent
 
 @Component({
   selector: 'pzps-test',
